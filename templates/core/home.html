@@ -1,0 +1,117 @@
+{% extends 'core/main.html' %}
+{% block title %}Home{% endblock %}
+{% load static%}
+<style>
+    mybox {
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+    }
+</style>
+{% block content %}
+<br>
+<div class="page-header" style="background-image: url('{% static 'images/Kehoe_Designs.jpg' %}'); padding:190px; width:100%">
+    <h1 style="">AI Event Company</h1>
+    <p>The most popular events company</p>
+</div>
+<br><br>
+
+<div class="container">
+
+    <h1 style="text-align:center">Best Upcoming Events</h1>
+    <br>
+    <div class="row">
+        {% for j in '012' %}
+        <div class="col col-sm-4">
+            <div class="card bg-light mb-3" style="max-width: 28rem;">
+                <div class="card-header">Sun May 30 2021 at 4:00 pm</div>
+                <img class="img-thumbnail" src="{% static 'images/Kehoe_Designs.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cable and Wire Fare</h5>
+                    <p class="card-text">Pragati Maidan, New Delhi</p>
+                    <p class="card-text">Entry: Free</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <br>
+    <h1 style="text-align:center">More Events</h1>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div class="btn btn-danger">Health</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Games</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Meetups</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Music</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Food</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Business</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Sports</div>
+        </div>
+        <div class="col">
+            <div class="btn btn-danger">Art</div>
+        </div>
+        <br><br><br><br>
+        <a class="btn btn-primary" href="">View all Online Events</a>
+    </div>
+    <hr>
+    <h1 style="text-align:center">Popular Events</h1>
+    <br>
+    <div class="row">
+        {% for event in events %}
+        <div class="col col-sm-4">
+            <div class="card bg-light mb-3" style="max-width: 28rem;">
+                <div class="card-header">{{ event.date }} {{event.time}}</div>
+                <img class="img-thumbnail" src="{{ event.imageurl }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ event.event_name }}</h5>
+                    <p class="card-text">{{ event.location }} {{ event.city }}</p>
+                    <p class="card-text">Entry: {{ event.entry_type }}</p>
+                    <a style="float:right" href="" class="btn btn-primary">Book Ticket Now</a>
+                    <a href="" class="btn btn-primary">View More</a>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <hr>
+    <h1 style="text-align:center">Out of City Events</h1>
+    <br>
+    <div class="row">
+        {% for ov in outdoor_events %}
+        <div class="col col-sm-4">
+            <div class="card bg-light mb-3" style="max-width: 28rem;">
+                <div class="card-header">{{ ov.date }} {{ov.time}}</div>
+                <img class="img-thumbnail" src="{{ ov.imageurl }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ ov.event_name }}</h5>
+                    <p class="card-text">{{ ov.location }} {{ ov.city }}</p>
+                    <p class="card-text">Entry: {{ ov.entry_type }}</p>
+                    <a style="float:right" href="" class="btn btn-primary">Book Ticket Now</a>
+                    <a href="" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+</div>
+<hr>
+
+{% endblock %}

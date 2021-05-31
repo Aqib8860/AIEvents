@@ -1,0 +1,115 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="62">
+            <item index="0" class="java.lang.String" itemvalue="charts" />
+            <item index="1" class="java.lang.String" itemvalue="joblib" />
+            <item index="2" class="java.lang.String" itemvalue="threadpoolctl" />
+            <item index="3" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="4" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="5" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="6" class="java.lang.String" itemvalue="django-nested-admin" />
+            <item index="7" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="8" class="java.lang.String" itemvalue="python-slugify" />
+            <item index="9" class="java.lang.String" itemvalue="django-bootstrap4" />
+            <item index="10" class="java.lang.String" itemvalue="anyjson" />
+            <item index="11" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="12" class="java.lang.String" itemvalue="xlrd" />
+            <item index="13" class="java.lang.String" itemvalue="python-nvd3" />
+            <item index="14" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="15" class="java.lang.String" itemvalue="django-simple-history" />
+            <item index="16" class="java.lang.String" itemvalue="django-admin-tools" />
+            <item index="17" class="java.lang.String" itemvalue="django-bower" />
+            <item index="18" class="java.lang.String" itemvalue="tablib" />
+            <item index="19" class="java.lang.String" itemvalue="django-import-export" />
+            <item index="20" class="java.lang.String" itemvalue="django-jsonfield" />
+            <item index="21" class="java.lang.String" itemvalue="click" />
+            <item index="22" class="java.lang.String" itemvalue="odfpy" />
+            <item index="23" class="java.lang.String" itemvalue="boto3" />
+            <item index="24" class="java.lang.String" itemvalue="django-liststyle" />
+            <item index="25" class="java.lang.String" itemvalue="django-user-activity-log2" />
+            <item index="26" class="java.lang.String" itemvalue="fcm-django" />
+            <item index="27" class="java.lang.String" itemvalue="diff-match-patch" />
+            <item index="28" class="java.lang.String" itemvalue="pyfcm" />
+            <item index="29" class="java.lang.String" itemvalue="sklearn" />
+            <item index="30" class="java.lang.String" itemvalue="admin" />
+            <item index="31" class="java.lang.String" itemvalue="wcwidth" />
+            <item index="32" class="java.lang.String" itemvalue="pycodestyle" />
+            <item index="33" class="java.lang.String" itemvalue="django-storages" />
+            <item index="34" class="java.lang.String" itemvalue="numpy" />
+            <item index="35" class="java.lang.String" itemvalue="click-didyoumean" />
+            <item index="36" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="37" class="java.lang.String" itemvalue="jdcal" />
+            <item index="38" class="java.lang.String" itemvalue="Unipath" />
+            <item index="39" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="40" class="java.lang.String" itemvalue="django-celery" />
+            <item index="41" class="java.lang.String" itemvalue="django-restframework" />
+            <item index="42" class="java.lang.String" itemvalue="autopep8" />
+            <item index="43" class="java.lang.String" itemvalue="scipy" />
+            <item index="44" class="java.lang.String" itemvalue="botocore" />
+            <item index="45" class="java.lang.String" itemvalue="django-fcm" />
+            <item index="46" class="java.lang.String" itemvalue="xlwt" />
+            <item index="47" class="java.lang.String" itemvalue="et-xmlfile" />
+            <item index="48" class="java.lang.String" itemvalue="MarkupPy" />
+            <item index="49" class="java.lang.String" itemvalue="toml" />
+            <item index="50" class="java.lang.String" itemvalue="python-memcached" />
+            <item index="51" class="java.lang.String" itemvalue="django-nvd3" />
+            <item index="52" class="java.lang.String" itemvalue="jmespath" />
+            <item index="53" class="java.lang.String" itemvalue="pandas" />
+            <item index="54" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="55" class="java.lang.String" itemvalue="python-monkey-business" />
+            <item index="56" class="java.lang.String" itemvalue="Unidecode" />
+            <item index="57" class="java.lang.String" itemvalue="click-repl" />
+            <item index="58" class="java.lang.String" itemvalue="djcacheutils" />
+            <item index="59" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="60" class="java.lang.String" itemvalue="django-admin-charts" />
+            <item index="61" class="java.lang.String" itemvalue="bower" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="job.models.JobSeeker.objects" />
+          <option value="job.models.JobRecruiter.objects" />
+          <option value="digitalprofile.models.DigitalProfile.objects" />
+          <option value="digitalprofile.models.PersonalDetail.objects" />
+          <option value="digitalprofile.models.SocialMediaLinks.objects" />
+          <option value="digitalprofile.models.PaymentDetail.objects" />
+          <option value="digitalprofile.models.Gallery.objects" />
+          <option value="digitalfacilities.models.DigitalVisitingCard.objects" />
+          <option value="digitalfacilities.models.DigitalDiary.objects" />
+          <option value="digitalfacilities.models.DigitalGreetingCard.objects" />
+          <option value="ecommerce.models.Product.objects" />
+          <option value="ecommerce.models.RatingReview.objects" />
+          <option value="vendor.models.Vendor.objects" />
+          <option value="vendor.models.BusinessInformation.objects" />
+          <option value="vendor.models.BankDetails.objects" />
+          <option value="vendor.models.Services.objects" />
+          <option value="vendor.models.Vendor.id" />
+          <option value="ecommerce.models.Cart.objects" />
+          <option value="digitalprofile.models.Ecommerce.objects" />
+          <option value="digitalprofile.models.Services.objects" />
+          <option value="store.models.Toppings.objects" />
+          <option value="store.models.Pizza.objects" />
+          <option value="store.models.PizzaSize.objects" />
+          <option value="store.models.UserPizza.objects" />
+          <option value="ecommerce.models.Category.objects" />
+          <option value="ecommerce.models.Brand.objects" />
+          <option value="ecommerce.models.Wishlist.objects" />
+          <option value="ecommerce.models.Review.objects" />
+          <option value="ecommerce.models.Bag.objects" />
+          <option value="ecommerce.models.DeliveryPincode.objects" />
+          <option value="ecommerce.models.DealsOfTheDay.objects" />
+          <option value="ecommerce.models.Offer.objects" />
+          <option value="ecommerce.models.DealsOfDay.objects" />
+          <option value="ecommerce.models.Accessories.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
