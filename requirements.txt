@@ -35,6 +35,7 @@ django-braces==1.14.0
 django-celery==3.3.1
 django-celery-beat==2.2.0
 django-celery-results==2.0.1
+django-cloudinary-storage==0.3.0
 django-colorfield==0.4.1
 django-cors-headers==3.6.0
 django-crontab==0.7.1
