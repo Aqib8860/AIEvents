@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -132,11 +135,24 @@ AUTH_USER_MODEL = 'core.User'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CLOUDINARY_STORAGE= { 
+  'CLOUD_NAME' : 'ai-world', 
+  'API_KEY' : '339697812222381', 
+  'API_SECRET' : 'LVQxe-HttrjpVeNThYuhvaIvPWs' 
+}
+CLOUDINARY = {
+    'max_length': 200,
+}
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 django_heroku.settings(locals())
