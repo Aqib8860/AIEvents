@@ -10,7 +10,9 @@
     }
 </style>
 {% block content %}
+
 <br>
+<h3 style="text-align: right">Hello {{ request.user.first_name }} {{ request.user.last_name }} !</h3>
 <div class="page-header" style="background-image: url('{% static 'images/Kehoe_Designs.jpg' %}'); padding:190px; width:100%">
     <h1 style="">AI Event Company</h1>
     <p>The most popular events company</p>

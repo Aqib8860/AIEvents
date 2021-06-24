@@ -28,6 +28,11 @@ class UserRegistrationForm(ModelForm):
         return user
 
 
+class UserLogin(forms.Form):
+    email = forms.EmailField(label='Email')
+    password = forms.CharField(widget=forms.PasswordInput())
+
+
 """class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField()
 
@@ -40,3 +45,5 @@ class UserRegistrationForm(ModelForm):
         # This is done here, rather than on the field, because the
         # field does not have access to the initial value
         return self.initial["password"]"""
+
+
