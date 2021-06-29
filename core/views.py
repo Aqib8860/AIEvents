@@ -38,7 +38,7 @@ class UserRegistrationView(CreateView):
             # username = form.cleaned_data.get('username')
             email = form.cleaned_data.get('email')
             messages.success(request, 'Account was created for ' + email)
-            return redirect('core:user-register')
+            return redirect('core:user-login')
         return render(request, self.template_name, {'form': form})
 
 
